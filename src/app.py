@@ -10,7 +10,7 @@ def user_form():
     llm = st.sidebar.radio('Select LLM:',['OpenAI GPT3','Anthropic Opus'])
     llm = convert_select_llm(llm)
 
-    topic = st.sidebar.text_area('Enter a question or a topic you wish to learn about:')
+    topic = st.sidebar.write('Enter a question or a topic you wish to learn about:')
     button = st.sidebar.button('Submit')
 
     if button or topic:
