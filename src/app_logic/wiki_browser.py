@@ -6,8 +6,6 @@ from app_logic.constants import OPEN_AI, ANTHROPIC, GPT3, OPUS
 
 
 def get_llm(llm_type: str, temp: float = 0.0):
-    print(f"apiKey: {ANTHROPIC_API_KEY}")
-    print(f"apiKey: {OPEN_AI_API_KEY}")
     if llm_type == "openai":
         return OpenAI(model_name=GPT3, temperature=temp, openai_api_key=OPEN_AI_API_KEY)
     if llm_type == "anthropic":
