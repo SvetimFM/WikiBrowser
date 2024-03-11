@@ -3,6 +3,7 @@ import time
 
 from app_logic.wiki_browser import convert_select_llm, agent_execute
 
+
 def user_form():
     st.title("Chat with Wikipedia")
     st.subheader("This app allows you to chat with Wikipedia.")
